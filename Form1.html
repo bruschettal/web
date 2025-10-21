@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BTE311</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(32, 33, 36);
+        color: rgb(232, 234, 237);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        margin-top: 0;
+        color: rgb(153, 195, 255);
+        border-bottom: 2px solid #363636;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: 1px solid #363636;
+        border-radius: 6px;
+        background-color: rgb(32, 33, 36);
+        color: rgb(232, 234, 237);
+        resize: none;
+      }
+
+      div.form {
+        display: block;
+        text-align: center;
+      }
+      form {
+        text-align: left;
+        border: 1px solid #444;
+        padding: 30px;
+        border-radius: 12px;
+        background-color: rgb(75, 75, 75);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .tus {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      .tus:hover {
+        background-color: #8f8f8f;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <form action="#">
+        <h1>Üyelik Formu</h1>
+
+        <label for="adsoyad">Ad Soyad:</label><br />
+        <input type="text" id="adsoyad" name="adsoyad" required /><br /><br />
+
+        <label for="email">E-Posta:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="on"
+          required
+        /><br /><br />
+
+        <label for="sifre">Şifre:</label><br />
+        <input type="password" id="sifre" name="sifre" required /><br /><br />
+
+        <label for="dogumtarihi">Doğum Tarihi:</label><br />
+        <input type="date" id="dogumtarihi" name="dogumtarihi" /><br /><br />
+
+        <label>Cinsiyet:</label>
+        <input type="radio" id="erkek" name="cinsiyet" value="Erkek" />
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="kadin" name="cinsiyet" value="Kadın" />
+        <label for="kadin">Kadın</label><br /><br />
+
+        <label for="telefon">Telefon:</label><br />
+        <input
+          type="tel"
+          id="telefon"
+          name="telefon"
+          placeholder="(5__) ___ __ __"
+        /><br /><br />
+
+        <label for="sehir">Şehir:</label><br />
+        <input type="text" id="sehir" name="sehir" placeholder="İstanbul" />
+        <br /><br />
+
+        <label for="bio">Kendinizi Kısaca Tanıtın:</label><br />
+        <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br /><br />
+
+        <input type="checkbox" id="kullanim" name="kullanim" required />
+        <label for="kullanim">Kullanım şartlarını kabul ediyorum</label
+        ><br /><br />
+
+        <input class="tus" type="submit" value="Üye Ol" />
+        <input class="tus" type="reset" value="Temizle" />
+      </form>
+    </div>
+  </body>
+</html>
