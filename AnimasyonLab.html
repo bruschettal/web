@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab Animasyon</title>
+    <style>
+      body {
+        background-color: rgb(32, 33, 36);
+      }
+
+      .sekil-container {
+        background-color: rgb(31, 47, 83);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10%;
+      }
+
+      .daire {
+        border-radius: 50%;
+        background-color: rgb(76, 106, 255);
+        display: inline-block;
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+      }
+
+      #asagi-yukari {
+        animation: asagi-yukari 5s infinite alternate;
+      }
+
+      @keyframes asagi-yukari {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(150px);
+        }
+
+        100% {
+          transform: translateY(-150px);
+        }
+      }
+
+      #buyu-kucul {
+        animation: buyu-kucul 5s infinite alternate;
+      }
+
+      @keyframes buyu-kucul {
+        0% {
+          transform: scale(1);
+          background-color: rgb(76, 106, 255);
+        }
+        100% {
+          transform: scale(2);
+          background-color: rgb(95, 0, 0);
+        }
+      }
+
+      #opaklik {
+        animation: opaklik 5s infinite alternate;
+      }
+
+      @keyframes opaklik {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      #sag-sol {
+        animation: sag-sol 1s infinite alternate;
+      }
+
+      @keyframes sag-sol {
+        0% {
+          transform: translateX(0);
+        }
+
+        50% {
+          transform: translateX(-100px);
+        }
+
+        100% {
+          transform: translateX(100px);
+        }
+      }
+
+      #dondurme {
+        animation: dondurme 2s infinite linear;
+      }
+
+      @keyframes dondurme {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sekil-container">
+      <div class="daire" id="asagi-yukari">😭</div>
+      <div class="daire" id="buyu-kucul">😭</div>
+      <div class="daire" id="opaklik">😭</div>
+      <div class="daire" id="sag-sol">😭</div>
+      <div class="daire" id="dondurme">😭</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hacettepe BÖTE</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+
+      .dikdortgen {
+        width: 1000px;
+        height: 800px;
+        background-color: rgba(229, 24, 55, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: 10s infinite alternate both;
+      }
+
+      .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      #yazi-container {
+        position: absolute;
+        display: table-cell;
+        vertical-align: middle;
+        top: 37%;
+        left: 35%;
+      }
+
+      #sekil1 {
+        width: 1000px;
+        height: 800px;
+        animation-name: sekilAnimasyon1;
+      }
+
+      #sekil2 {
+        width: 900px;
+        height: 700px;
+        animation-name: sekilAnimasyon2;
+      }
+
+      #sekil3 {
+        width: 800px;
+        height: 600px;
+        animation-name: sekilAnimasyon3;
+      }
+
+      #sekil4 {
+        width: 700px;
+        height: 500px;
+        animation-name: sekilAnimasyon4;
+      }
+
+      #sekil5 {
+        width: 600px;
+        height: 400px;
+        animation-name: sekilAnimasyon5;
+      }
+
+      #sekil6 {
+        width: 500px;
+        height: 300px;
+        animation-name: sekilAnimasyon6;
+      }
+      #sekil7 {
+        width: 900px;
+        height: 700px;
+        animation-name: sekilAnimasyon7;
+      }
+      #sekil8 {
+        width: 900px;
+        height: 700px;
+        animation-name: sekilAnimasyon8;
+      }
+      #sekil9 {
+        width: 900px;
+        height: 700px;
+        animation-name: sekilAnimasyon9;
+      }
+      #sekil10 {
+        width: 900px;
+        height: 700px;
+        animation-name: sekilAnimasyon10;
+      }
+
+      #yazi {
+        color: rgb(255, 255, 255);
+        font-size: 5em;
+      }
+
+      @keyframes sekilAnimasyon1 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.8);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.6);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.7);
+        }
+      }
+
+      @keyframes sekilAnimasyon2 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.4, 1);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1, 0.4);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+
+      @keyframes sekilAnimasyon3 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.7, 0.9);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.2, 0.7);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.9, 0.88);
+        }
+      }
+
+      @keyframes sekilAnimasyon4 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.4, 0.48);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.3);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.35, 0.85);
+        }
+      }
+
+      @keyframes sekilAnimasyon5 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.5, 0.2);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.22, 0.38);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.5);
+        }
+      }
+
+      @keyframes sekilAnimasyon6 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.45, 0.4);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.4, 0.48);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.8, 0.95);
+        }
+      }
+
+      @keyframes sekilAnimasyon7 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.77, 0.57);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.87, 0.56);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.72, 0.55);
+        }
+      }
+
+      @keyframes sekilAnimasyon8 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.9, 0.52);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.7, 0.9);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.33, 0.44);
+        }
+      }
+      @keyframes sekilAnimasyon9 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.66, 0.33);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.4, 0.2);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.75, 0.67);
+        }
+      }
+      @keyframes sekilAnimasyon10 {
+        0% {
+          transform: translate(-50%, -50%) scale(0.8, 0.4);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(0.93, 0.66);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(0.45, 0.77);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dikdortgen" id="sekil1"></div>
+      <div class="dikdortgen" id="sekil2"></div>
+      <div class="dikdortgen" id="sekil3"></div>
+      <div class="dikdortgen" id="sekil4"></div>
+      <div class="dikdortgen" id="sekil5"></div>
+      <div class="dikdortgen" id="sekil6"></div>
+      <div class="dikdortgen" id="sekil7"></div>
+      <div class="dikdortgen" id="sekil8"></div>
+      <div class="dikdortgen" id="sekil9"></div>
+      <div class="dikdortgen" id="sekil10"></div>
+    </div>
+    <div id="yazi-container">
+      <h1 id="yazi">Hacettepe BÖTE</h1>
+    </div>
+  </body>
+</html>
